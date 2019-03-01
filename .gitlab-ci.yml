@@ -1,6 +1,8 @@
 stages: 
   - build
 
+image: docker:stable
+
 docker:
   stage: build
   tags: 
