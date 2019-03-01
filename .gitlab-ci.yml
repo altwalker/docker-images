@@ -1,0 +1,10 @@
+stages: 
+  - build
+
+docker:
+  stage: build
+  tags: 
+    - docker
+  script: 
+    - docker --help
+    
