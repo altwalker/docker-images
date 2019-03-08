@@ -8,6 +8,6 @@ altwalker:
   tags:
     - docker
   before_script:
-    - docker login --username=altwalekrbot --password=$PASSWORD
+    - docker login --username=altwalkerbot --password=$PASSWORD
   script:
     - docker --help
