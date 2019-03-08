@@ -3,11 +3,15 @@ stages:
 
 image: docker:stable
 
+before_script:
+  - docker login --username=altwalkerbot --password=$PASSWORD
+
+after_script:
+  - docker logout
+
 altwalker:
   stage: build
   tags:
     - docker
-  before_script:
-    - docker login --username=altwalkerbot --password=$PASSWORD
   script:
     - docker --help
