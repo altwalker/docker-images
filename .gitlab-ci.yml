@@ -2,6 +2,8 @@ stages:
   - build
 
 image: docker:stable
+services:
+  - docker:dind
 
 before_script:
   - docker login --username=altwalkerbot --password=$PASSWORD
