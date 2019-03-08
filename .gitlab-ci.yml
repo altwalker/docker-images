@@ -17,7 +17,7 @@ altwalker:
     - docker
   script:
     - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION="0.1.0" ./altwalker
-    - docker tag altwalker/altwalker altwalker/altwalker:0.0.1
-    - docker push altwalker/altwalker:0.0.1
+    - docker tag altwalker/altwalker altwalker/altwalker:0.1.0
+    - docker push altwalker/altwalker:0.1.0
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
