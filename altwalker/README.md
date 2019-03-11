@@ -22,7 +22,7 @@ FROM altwalker\altwalker:latest
 COPY test-porject
 WORKDIR test-project
 
-RUN altwalker online tests -m models/default.json
+RUN altwalker online tests -m models/default.json "random(vertex_coverage(100))"
 ```
 
 Then, run the commands to build and run the Docker image:
