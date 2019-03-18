@@ -2,6 +2,7 @@ stages:
   - build
 
 image: docker:stable
+
 services:
   - docker:dind
 
@@ -11,13 +12,16 @@ before_script:
 after_script:
   - docker logout
 
+variables:
+  ALTWALKER_VERSION: "0.1.1"
+
 altwalker:
   stage: build
   tags:
     - docker
   script:
-    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION="0.1.0" ./altwalker
-    - docker tag altwalker/altwalker altwalker/altwalker:0.1.0
-    - docker push altwalker/altwalker:0.1.0
+    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION ./altwalker
+    - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION
+    - docker push altwalker/altwalker:$ALTWALKER_VERSION
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
