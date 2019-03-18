@@ -4,7 +4,8 @@ Docker images for AltWalker.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`0.1.0`, `latest` (0.1.0/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.1.1`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.1.0` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 
 ## AltWalker
 
