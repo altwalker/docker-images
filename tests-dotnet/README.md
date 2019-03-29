@@ -15,20 +15,3 @@ Docker Images for AltWalker dotnet executor ci tests
 
 This image creates a script facilitating runnig AltWalker's dotnet tests in a docker container.
 
-### Create a Dockerfile in your project
-
-```
-FROM altwalker\tests-dotnet:latest
-
-COPY test-project
-WORKDIR test-project
-
-#TODO
-```
-
-Then, run the commands to build and run the Docker image:
-
-```
-$ docker build -t altwalker-dotnet-tests-image .
-$ docker run --name altwalker-dotnet-tests -p 8887:8887 altwalker-dotnet-tests-image
-```
