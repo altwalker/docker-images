@@ -25,3 +25,15 @@ altwalker:
     - docker push altwalker/altwalker:$ALTWALKER_VERSION
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
+
+tests:
+  stage: build
+  tags:
+    - docker
+  script:
+    - docker build -t altwalker/altwalker --build-arg DOTNET_SDK_VERSION="2.1" ./tests
+    - docker tag altwalker/tests altwalker/tests:dotnet-v2.1
+    - docker push altwalker/tests altwalker/tests:dotnet-v2.1
+    - docker build -t altwalker/altwalker --build-arg DOTNET_SDK_VERSION="2.2" ./tests
+    - docker tag altwalker/tests altwalker/tests:dotnet-v2.2
+    - docker push altwalker/tests altwalker/tests:dotnet-v2.2
