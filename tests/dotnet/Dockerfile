@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:${DOTNET_SDK_VERSION}
 
 RUN apt-get update && apt-get install -y \
     wget \
+    unzip \
     openjdk-8-jdk \
     python3 \
     python3-pip
