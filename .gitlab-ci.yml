@@ -13,7 +13,7 @@ after_script:
   - docker logout
 
 variables:
-  ALTWALKER_VERSION: "0.2.0"
+  ALTWALKER_VERSION: "0.2.1"
 
 altwalker:
   stage: build
