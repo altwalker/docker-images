@@ -2,7 +2,7 @@ FROM node:12-slim
 
 ARG FIREFOX_VERSION=69.0.2
 
-# required pacakges
+# required packages
 RUN apt-get update -qqy \
     && apt-get -y install procps bzip2 libgtk-3-0 libdbus-glib-1-2 libxt6
 
