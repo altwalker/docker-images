@@ -37,3 +37,6 @@ tests:
     - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.2" ./tests/dotnet
     - docker tag altwalker/tests altwalker/tests:dotnet-v2.2
     - docker push altwalker/tests:dotnet-v2.2
+    - docker build -t altwalker/tests ./tests/model-visualizer
+    - docker tag altwalker/tests altwalker/tests:model-visualizer
+    - docker push altwalker/tests:model-visualizer

@@ -19,5 +19,3 @@ RUN wget --no-verbose -O /tmp/google-chrome-stable_current_amd64.deb https://dl.
     && apt -y install /tmp/google-chrome-stable_current_amd64.deb \
     && rm /tmp/google-chrome-stable_current_amd64.deb \
     && google-chrome --version
-
-CMD ["/bin/bash"]
