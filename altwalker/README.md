@@ -4,7 +4,8 @@ Docker images for AltWalker.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`0.2.4`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.2.5`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.2.4` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.3` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.2` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.1` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
@@ -23,7 +24,7 @@ This image creates a script facilitating runnig AltWalker's command line on a do
 ### Create a Dockerfile in your project
 
 ```
-FROM altwalker\altwalker:latest
+FROM altwalker/altwalker:latest
 
 COPY test-porject
 WORKDIR test-project
