@@ -4,7 +4,8 @@ Docker images for AltWalker.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`0.2.6`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.2.7`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.2.6` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.5` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.4` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
 * [`0.2.3` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
@@ -24,7 +25,7 @@ This image creates a script facilitating runnig AltWalker's command line on a do
 
 ### Create a Dockerfile in your project
 
-```
+```dockerfile
 FROM altwalker/altwalker:latest
 
 COPY test-porject
@@ -35,7 +36,7 @@ RUN altwalker online tests -m models/default.json "random(vertex_coverage(100))"
 
 Then, run the commands to build and run the Docker image:
 
-```
+```bash
 $ docker build -t altwalker-image .
 $ docker run --name altwalker-tests -p 8887:8887 altwalker-image
 ```
