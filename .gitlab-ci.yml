@@ -13,7 +13,7 @@ after_script:
   - docker logout
 
 variables:
-  GRAPHWALKER_VERSION: "4.1.0"
+  GRAPHWALKER_VERSION: "4.2.0"
   ALTWALKER_VERSION: "0.2.7"
 
 graphwalker:
