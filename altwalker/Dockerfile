@@ -1,4 +1,5 @@
 FROM robert96/graphwalker-cli:latest
+
 ARG ALTWALKER_VERSION='0.1.0'
 
 ENV LC_ALL=C.UTF-8

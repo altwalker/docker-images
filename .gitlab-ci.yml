@@ -13,12 +13,28 @@ after_script:
   - docker logout
 
 variables:
+  GRAPHWALKER_VERSION: "4.0.0"
   ALTWALKER_VERSION: "0.2.7"
+
+graphwalker:
+  stage: build
+  tags:
+    - docker
+  when: manual
+  only:
+    - master
+  script:
+    - docker build -t altwalker/graphwalker --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./graphwalker
+    - docker tag altwalker/graphwalker altwalker/graphwalker:$GRAPHWALKER_VERSION
+    - docker push altwalker/graphwalker:$GRAPHWALKER_VERSION
 
 altwalker:
   stage: build
   tags:
     - docker
+  when: manual
+  only:
+    - master
   script:
     - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION ./altwalker
     - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION
@@ -30,6 +46,9 @@ tests:
   stage: build
   tags:
     - docker
+  when: manual
+  only:
+    - master
   script:
     - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.1" ./tests/dotnet
     - docker tag altwalker/tests altwalker/tests:dotnet-v2.1
