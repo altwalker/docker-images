@@ -27,6 +27,8 @@ graphwalker:
     - docker build -t altwalker/graphwalker --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./graphwalker
     - docker tag altwalker/graphwalker altwalker/graphwalker:$GRAPHWALKER_VERSION
     - docker push altwalker/graphwalker:$GRAPHWALKER_VERSION
+    - docker tag altwalker/graphwalker altwalker/graphwalker:latest
+    - docker push altwalker/graphwalker:latest
 
 altwalker:
   stage: build
