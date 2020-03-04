@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-ARG GRAPHWALKER_VERSION = "4.0.0"
+ARG GRAPHWALKER_VERSION="4.0.0"
 
 RUN apt-get update && apt-get install -y \
     wget \
