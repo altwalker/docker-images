@@ -52,10 +52,10 @@ tests-dotnet:
   only:
     - master
   script:
-    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.1" ./tests/dotnet
+    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.1" --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./tests/dotnet
     - docker tag altwalker/tests altwalker/tests:dotnet-v2.1
     - docker push altwalker/tests:dotnet-v2.1
-    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.2" ./tests/dotnet
+    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.2" --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./tests/dotnet
     - docker tag altwalker/tests altwalker/tests:dotnet-v2.2
     - docker push altwalker/tests:dotnet-v2.2
 
