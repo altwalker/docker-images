@@ -1,7 +1,7 @@
 ARG DOTNET_SDK_VERSION='2.2'
-ARG GRAPHWALKER_VERSION='4.2.0'
-
 FROM mcr.microsoft.com/dotnet/core/sdk:${DOTNET_SDK_VERSION}
+
+ARG GRAPHWALKER_VERSION='4.2.0'
 
 RUN apt-get update && apt-get install -y \
     wget \
