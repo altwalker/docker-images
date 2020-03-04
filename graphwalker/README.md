@@ -4,8 +4,10 @@ Docker images for GraphWalker CLI
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`4.0.1`, `latest` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
-* [`4.0.0`, (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.2.0`, `latest` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.1.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.0.1` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.0.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
 
 ## GraphWalker CLI
 
@@ -20,7 +22,7 @@ This image creates a script facilitating runnig GraphWalker's command line on a 
 ### Create a `Dockerfile` in your project
 
 ```
-FROM robert96/graphwalker-cli:latest
+FROM altwalker/graphwalker:latest
 CMD gw online -s RESTFUL
 ```
 
@@ -31,12 +33,14 @@ $ docker build -t my-graphwalker .
 $ docker run --name my-running-graphwalker -p 8887:8887 my-graphwalker
 ```
 
+Visit http://localhost:8887/graphwalker/getStatistics and you will see It works!
+
 ### Without a Dockerfile
 
 Start the GraphWalker REST service on a docker image:
 
 ```
-docker run -it -p 8887:8887 graphwalker-cli:latest gw online -s RESTFUL
+$ docker run -it -p 8887:8887 altwalker/graphwalker:latest gw online -s RESTFUL
 ```
 
 Visit http://localhost:8887/graphwalker/getStatistics and you will see It works!
