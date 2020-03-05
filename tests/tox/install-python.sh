@@ -9,7 +9,7 @@ tar xzvf "Python-$PYTHON_VERSION.tgz"
 cd "Python-$PYTHON_VERSION"
 
 ./configure
-make
-make altinstall
+make > /dev/null
+make altinstall > /dev/null
 
 echo "CPython: $PYTHON_VERSION is installed."

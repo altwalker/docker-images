@@ -44,7 +44,7 @@ altwalker:
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
 
-test-tox:
+tests-tox:
   stage: build
   tags:
     - docker

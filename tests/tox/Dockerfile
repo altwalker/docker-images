@@ -14,12 +14,6 @@ RUN chmod +x install-python.sh
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
-# Get Python 2.7
-RUN ./install-python.sh "2.7.15"
-RUN python2.7 -V
-RUN python2.7 get-pip.py
-RUN python2.7 -m pip -h
-
 # Get Python 3.4
 RUN ./install-python.sh "3.4.9"
 RUN python3.4 -V
@@ -33,26 +27,23 @@ RUN python3.5 -m pip -V
 # Get Python 3.6
 RUN ./install-python.sh "3.6.10"
 RUN python3.6 -V
-RUN python3.6 -m pip -h
+RUN python3.6 -m pip -V
 
 # Get Python 3.7
 RUN ./install-python.sh "3.7.6"
 RUN python3.7 -V
-RUN python3.7 -m pip -h
+RUN python3.7 -m pip -V
 
 # Get Python 3.8
 RUN ./install-python.sh "3.8.2"
 RUN python3.8 -V
-RUN python3.8 -m pip -h
+RUN python3.8 -m pip -V
 
 # Get PyPy
 RUN apt-get install -y \
-        pypy \
-        pypy-dev \
         pypy3 \
         pypy3-dev
 
-RUN pypy -V
 RUN pypy3 -V
 
 # Install tox
