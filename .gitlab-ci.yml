@@ -44,6 +44,18 @@ altwalker:
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
 
+test-tox:
+  stage: build
+  tags:
+    - docker
+  when: manual
+  only:
+    - master
+  script:
+    - docker build -t altwalker/tests ./tests/tox
+    - docker tag altwalker/tests altwalker/tests:tox
+    - docker push altwalker/tests:tox
+
 tests-dotnet:
   stage: build
   tags:
