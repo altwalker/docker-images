@@ -1,4 +1,4 @@
-FROM robert96/graphwalker-cli:latest
+FROM altwalker/graphwalker:latest
 
 ARG ALTWALKER_VERSION='0.1.0'
 
