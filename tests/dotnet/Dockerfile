@@ -14,8 +14,8 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 # Get the GraphWalker CLI jar
-# RUN wget --no-verbose -O ./graphwalker-cli.jar https://github.com/GraphWalker/graphwalker-project/releases/download/${GRAPHWALKER_VERSION}/graphwalker-cli-${GRAPHWALKER_VERSION}.jar
-RUN wget --no-verbose -O /graphwalker-cli.jar https://github.com/GraphWalker/graphwalker-project/releases/download/4.2.0/graphwalker-cli-4.2.0.jar
+RUN wget --no-verbose -O /graphwalker-cli.jar https://github.com/GraphWalker/graphwalker-project/releases/download/${GRAPHWALKER_VERSION}/graphwalker-cli-${GRAPHWALKER_VERSION}.jar
+# RUN wget --no-verbose -O /graphwalker-cli.jar https://github.com/GraphWalker/graphwalker-project/releases/download/4.2.0/graphwalker-cli-4.2.0.jar
 
 # Create a script
 RUN echo '#!/bin/bash\n/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /graphwalker-cli.jar "$@"' >> /graphwalker-cli.sh
