@@ -1,5 +1,6 @@
 FROM altwalker/graphwalker:latest
 
+RUN sudo add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y  \
@@ -13,6 +14,13 @@ COPY install-python.sh .
 RUN chmod +x install-python.sh
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+# Get PyPy3
+RUN apt-get install -y \
+        pypy3 \
+        pypy3-dev
+
+RUN pypy3 -V
 
 # Get Python 3.4
 RUN ./install-python.sh "3.4.9"
@@ -38,13 +46,6 @@ RUN python3.7 -m pip -V
 RUN ./install-python.sh "3.8.2"
 RUN python3.8 -V
 RUN python3.8 -m pip -V
-
-# Get PyPy
-RUN apt-get install -y \
-        pypy3 \
-        pypy3-dev
-
-RUN pypy3 -V
 
 # Install tox
 RUN python3.8 -m pip install tox
