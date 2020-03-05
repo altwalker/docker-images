@@ -1,6 +1,6 @@
 FROM altwalker/graphwalker:latest
 
-RUN sudo add-apt-repository ppa:pypy/ppa
+RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y  \
