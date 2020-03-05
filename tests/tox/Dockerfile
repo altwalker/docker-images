@@ -1,6 +1,5 @@
 FROM altwalker/graphwalker:latest
 
-RUN add-apt-repository ppa:pypy/ppa
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y  \
@@ -16,9 +15,11 @@ RUN chmod +x install-python.sh
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 # Get PyPy3
-RUN apt-get install -y \
-        pypy3 \
-        pypy3-dev
+RUN wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy3.6-v7.3.0-linux64.tar.bz2
+RUN tar -x -C /opt -f /tmp/pypy3.6-v7.3.0-linux64.tar.bz2
+RUN rm /tmp/pypy3.6-v7.3.0-linux64.tar.bz2
+RUN mv /opt/pypy3.6-v7.3.0-linux64 /opt/pypy3
+RUN ln -s /opt/pypy3/bin/pypy3 /usr/local/bin/pypy3
 
 RUN pypy3 -V
 
