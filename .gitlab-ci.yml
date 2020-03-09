@@ -38,11 +38,30 @@ altwalker:
   only:
     - master
   script:
-    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION ./altwalker
+    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION ./altwalker/base
     - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION
     - docker push altwalker/altwalker:$ALTWALKER_VERSION
     - docker tag altwalker/altwalker altwalker/altwalker:latest
     - docker push altwalker/altwalker:latest
+
+altwalker-dotnet:
+  stage: build
+  tags:
+    - docker
+  when: manual
+  only:
+    - master
+  script:
+    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION --build-arg DOTNET_SDK_VERSION="2.1" ./altwalker/dotnet
+    - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION-dotnet-v2.1
+    - docker push altwalker/altwalker:$ALTWALKER_VERSION-dotnet-v2.1
+    - docker tag altwalker/altwalker altwalker/altwalker:latest-dotnet-v2.1
+    - docker push altwalker/altwalker:latest-dotnet-v2.1
+    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION --build-arg DOTNET_SDK_VERSION="2.2" ./altwalker/dotnet
+    - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION-dotnet-v2.2
+    - docker push altwalker/altwalker:$ALTWALKER_VERSION-dotnet-v2.2
+    - docker tag altwalker/altwalker altwalker/altwalker:latest-dotnet-v2.2
+    - docker push altwalker/altwalker:latest-dotnet-v2.2
 
 tests-tox:
   stage: build

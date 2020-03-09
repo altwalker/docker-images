@@ -4,16 +4,17 @@ Docker images for AltWalker.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`0.2.7`, `latest` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.6` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.5` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.4` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.3` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.2` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.1` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.2.0` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.1.1` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
-* [`0.1.0` (altwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/Dockerfile)
+* [`0.2.7`, `latest` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.7-dotnet-v2.1`, `0.2.7-dotnet-v2.2`, `latest-dotnet-v2.1`, `latest-dotnet-v2.2` (altwalker/dotnet/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/dotnet/Dockerfile)
+* [`0.2.6` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.5` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.4` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.3` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.2` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.1` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.2.0` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.1.1` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
+* [`0.1.0` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
 
 ## AltWalker
 
