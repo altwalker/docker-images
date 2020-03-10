@@ -41,3 +41,17 @@ Then, run the commands to build and run the Docker image:
 $ docker build -t altwalker-image .
 $ docker run --name altwalker-tests -p 8887:8887 altwalker-image
 ```
+
+## Image Variants
+
+The AltWalker images come in two flavors, each designed for a specific use case.
+
+### `altwalker/altwalker:<version>`
+
+This is the defacto image. If you are running python tests, you want to use
+this one.
+
+### `altwalker/altwalker:<version>-dotnet-<version>`
+
+This images also contains `dotnet`. If you are running .Net/C# tests, you want to use
+this one.
