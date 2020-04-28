@@ -57,11 +57,11 @@ altwalker-dotnet:
     - docker push altwalker/altwalker:$ALTWALKER_VERSION-dotnet-2.1
     - docker tag altwalker/altwalker altwalker/altwalker:latest-dotnet-2.1
     - docker push altwalker/altwalker:latest-dotnet-2.1
-    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION --build-arg DOTNET_SDK_VERSION="2.2" ./altwalker/dotnet
-    - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION-dotnet-2.2
-    - docker push altwalker/altwalker:$ALTWALKER_VERSION-dotnet-2.2
-    - docker tag altwalker/altwalker altwalker/altwalker:latest-dotnet-2.2
-    - docker push altwalker/altwalker:latest-dotnet-2.2
+    - docker build -t altwalker/altwalker --build-arg ALTWALKER_VERSION=$ALTWALKER_VERSION --build-arg DOTNET_SDK_VERSION="3.1" ./altwalker/dotnet
+    - docker tag altwalker/altwalker altwalker/altwalker:$ALTWALKER_VERSION-dotnet-3.1
+    - docker push altwalker/altwalker:$ALTWALKER_VERSION-dotnet-3.1
+    - docker tag altwalker/altwalker altwalker/altwalker:latest-dotnet-3.1
+    - docker push altwalker/altwalker:latest-dotnet-3.1
 
 tests-tox:
   stage: build
@@ -86,9 +86,9 @@ tests-dotnet:
     - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.1" --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./tests/dotnet
     - docker tag altwalker/tests altwalker/tests:dotnet-v2.1
     - docker push altwalker/tests:dotnet-v2.1
-    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="2.2" --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./tests/dotnet
-    - docker tag altwalker/tests altwalker/tests:dotnet-v2.2
-    - docker push altwalker/tests:dotnet-v2.2
+    - docker build -t altwalker/tests --build-arg DOTNET_SDK_VERSION="3.1" --build-arg GRAPHWALKER_VERSION=$GRAPHWALKER_VERSION ./tests/dotnet
+    - docker tag altwalker/tests altwalker/tests:dotnet-v3.1
+    - docker push altwalker/tests:dotnet-v3.1
 
 tests-model-visualizer:
   stage: build
