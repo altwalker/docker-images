@@ -1,10 +1,10 @@
-FROM debian:stretch
+FROM debian:buster
 
-ARG GRAPHWALKER_VERSION="4.0.0"
+ARG GRAPHWALKER_VERSION="4.3.0"
 
 RUN apt-get update && apt-get install -y \
     wget \
-    openjdk-8-jdk \
+    openjdk-11-jdk \
     python3 \
     python3-pip \
     git
