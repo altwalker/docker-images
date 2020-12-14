@@ -5,7 +5,7 @@ Docker images for AltWalker.
 ## Supported tags and respective `Dockerfile` links
 
 * [`0.2.7`, `latest` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
-* [`0.2.7-dotnet-2.1`, `0.2.7-dotnet-2.2`, `latest-dotnet-2.1`, `latest-dotnet-2.2` (altwalker/dotnet/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/dotnet/Dockerfile)
+* [`0.2.7-dotnet-2.1`, `0.2.7-dotnet-3.1`, `latest-dotnet-2.1`, `latest-dotnet-3.1` (altwalker/dotnet/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/dotnet/Dockerfile)
 * [`0.2.6` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
 * [`0.2.5` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
 * [`0.2.4` (altwalker/base/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/altwalker/base/Dockerfile)
