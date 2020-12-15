@@ -3,9 +3,12 @@ FROM altwalker/graphwalker:latest
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y  \
-        git curl wget \
-        make build-essential \
-        openssl libssl1.0 libssl-dev zlib1g-dev libbz2-dev libsqlite3-dev
+        git curl wget make \
+        build-essential python3-dev python3-setuptools python3-pip python3-smbus \
+        libncursesw5-dev libgdbm-dev libc6-dev \
+        zlib1g-dev libsqlite3-dev tk-dev \
+        libssl-dev openssl \
+        libffi-dev
 
 COPY install-python.sh .
 COPY install-pypy.sh .
