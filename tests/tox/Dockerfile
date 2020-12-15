@@ -45,5 +45,6 @@ RUN python3.8 -V
 RUN python3.8 -m pip -V
 
 # Install tox
-RUN python3.9 -m pip install tox
+RUN python3.9 -m pip install --upgrade pip
+RUN python3.9 -m pip install setuptools wheel tox
 RUN tox --version
