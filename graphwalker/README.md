@@ -1,6 +1,6 @@
 # GraphWalker Docker Images
 
-Docker images for GraphWalker CLI
+Docker images for GraphWalker CLI.
 
 ## Supported tags and respective `Dockerfile` links
 
