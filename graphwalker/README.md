@@ -4,8 +4,9 @@ Docker images for GraphWalker CLI.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`4.3.0`, `latest` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
-* [`4.2.0`, (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.3.1`, `latest` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.3.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
+* [`4.2.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
 * [`4.1.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
 * [`4.0.1` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
 * [`4.0.0` (graphwalker/Dockerfile)](https://gitlab.com/altom/altwalker/docker-images/blob/master/graphwalker/Dockerfile)
