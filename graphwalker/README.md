@@ -22,11 +22,11 @@ The `altwalker/graphwalker:latest` tag will always point the latest release (whi
 
 Up to the `altwalker/graphwalker:4.2.0` tag all tags had installed OpenJDK 8 (because before version 4.3.0 the latest version of Java supported by GraphWalker was Java 8).
 
-Begining with the `altwalker/graphwalker:4.3.0` tag all tags will have installed OpenJDK 11.
+Beginning with the `altwalker/graphwalker:4.3.0` tag all tags will have installed OpenJDK 11.
 
 ## How to use this image
 
-This image creates a script facilitating runnig GraphWalker's command line on a linux machine.
+This image creates a script facilitating running GraphWalker's command line on a linux machine.
 
 ### Create a `Dockerfile` in your project
 

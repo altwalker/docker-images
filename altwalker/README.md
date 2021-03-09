@@ -22,7 +22,7 @@ Docker images for AltWalker.
 
 ## How to use this image
 
-This image creates a script facilitating runnig AltWalker's command line on a docker container.
+This image creates a script facilitating running AltWalker's command line on a docker container.
 
 ### Create a Dockerfile in your project
 
