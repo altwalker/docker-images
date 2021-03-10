@@ -14,7 +14,7 @@ after_script:
 
 variables:
   GRAPHWALKER_VERSION: "4.3.1"
-  ALTWALKER_VERSION: "0.2.7"
+  ALTWALKER_VERSION: "0.3.0"
 
 graphwalker:
   stage: build
