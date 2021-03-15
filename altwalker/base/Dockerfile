@@ -1,4 +1,4 @@
-FROM altwalker/graphwalker:4.3.0
+FROM altwalker/graphwalker:latest
 
 ARG ALTWALKER_VERSION="0.3.0"
 
